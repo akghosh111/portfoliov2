@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-slate-900 text-gray-200;
+  }
+
+  h1 {
+    font-family: 'JetBrains Mono', monospace;
+    @apply text-4xl font-bold text-purple-400;
+  }
+
+  h2 {
+    font-family: 'JetBrains Mono', monospace;
+    @apply text-3xl font-semibold text-purple-300;
+  }
+
+  p {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  a {
+    @apply text-purple-400 hover:text-purple-300 transition-colors;
+  }
+
+  button {
+    @apply bg-purple-500 text-white font-semibold px-4 py-2 rounded-lg 
+           hover:bg-purple-600 transition-all;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800 p-6 rounded-xl shadow-md shadow-purple-600/30;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  /* .hero-pattern {
+    background: url('/path-to-hero-pattern.svg');
+    @apply bg-cover bg-center bg-no-repeat;
+  } */
+}
