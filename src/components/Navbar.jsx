@@ -24,7 +24,7 @@ const Navbar = () => {
           {isOpen ? "✖" : "☰"}
         </button>
 
-        {/* Desktop Menu */}
+        
         <ul className="hidden md:flex items-center gap-6 text-sm text-white">
           {navLinks.map((link) => (
             <li key={link.display} className="cursor-pointer font-medium">
