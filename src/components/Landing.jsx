@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import achievement1 from "../assets/achievement1.png";
+import achievement2 from "../assets/achievement2.png";
+import achievement3 from "../assets/achievement3.png";
 import TechWheel from './TechWheel';
 import { Github, Linkedin, Twitter, Globe, Video } from 'lucide-react';
 
+
+const achievements = [
+  { img: achievement1, title: "SIT Ideathon'25 - 1st Runner's Up" },
+  { img: achievement2, title: "Technophilia - SJC, North Point, Darjeeling" },
+  { img: achievement3, title: "Website bug report acknowledged - VBU" }
+];
+
 const Landing = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Open modal with the clicked image
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  // Close modal
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div>
       <section id='home'>
@@ -40,36 +61,24 @@ const Landing = () => {
       <section id='achievements' className='mt-0 p-10 min-h-screen'>
         <h2 className="md:text-3xl text-2xl text-center mb-6">Achievements</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          
-          
-        <div className="achievement-card">
-            <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
-            <div className=""></div>
-            <p className="achievement-text">
-              SIT Ideathon'25 - 1st Runner's Up
-            </p>
-          </div>
-
-          
-          <div className="achievement-card">
-            <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
-            <div className="achievement-overlay"></div>
-            <p className="achievement-text">
-              Technophilia - 1st @SJC, Darjeeling
-            </p>
-          </div>
-
-          
-          <div className="achievement-card">
-            <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
-            <div className="achievement-overlay"></div>
-            <p className="achievement-text">
-              VBU - Website Bug Acknowledgement
-            </p>
-          </div>
-
+          {achievements.map((achievement, index) => (
+            <div key={index} className="achievement-card cursor-pointer" onClick={() => openModal(achievement.img, achievement.title)}>
+              <img src={achievement.img} alt={`Achievement ${index + 1}`} className="achievement-image" />
+              <div className="achievement-overlay"></div>
+              <p className="achievement-text">{achievement.title}</p>
+            </div>
+          ))}
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50" onClick={closeModal}>
+          <div className="relative p-4">
+            <img src={selectedImage} alt="Enlarged Achievement" className="max-w-full max-h-screen rounded-lg shadow-lg" />
+          </div>
+        </div>
+      )}
 
       <section id='projects' className='mt-0 p-10 min-h-screen'>
         <h2 className="md:text-3xl text-2xl text-center mb-6">Projects</h2>
@@ -168,6 +177,7 @@ const Landing = () => {
 
       <section id='contact' className='mt-0 p-10 min-h-screen'>
        <h2 className="md:text-3xl text-2xl text-center mb-6">Get in Touch</h2>
+       <h3 className='text-center font-semibold'>Send me an email at admin@anukiranghosh.com</h3>
 
       </section>
     </div>

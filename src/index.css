@@ -57,15 +57,20 @@
 }
 
 .achievement-image {
-  @apply w-full h-full object-cover;
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+.achievement-card:hover .achievement-image {
+  @apply scale-105;
 }
 
 .achievement-overlay {
-  @apply absolute inset-0 bg-blue-500/40;
+  @apply absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent;
 }
 
+
 .achievement-text {
-  @apply absolute bottom-4 left-4 text-white text-lg font-bold drop-shadow-lg;
+  @apply absolute bottom-0 left-0 right-0 text-white text-lg font-bold p-4 z-10;
 }
 
 .project-card {
