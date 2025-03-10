@@ -21,9 +21,16 @@ const Landing = () => {
               <i><b>They get engineered into existence.</b></i>
             </h3>
             <div className="flex items-center justify-center gap-4">
-              <Github className="mt-5 w-7 h-7 text-purple-500 hover:text-purple-300 transition-colors duration-300 cursor-pointer" />
+              <a href="https://github.com/akghosh111" target="_blank" rel="noopener noreferrer">
+                <Github className="mt-5 w-7 h-7 text-purple-500 hover:text-purple-300 transition-colors duration-300 cursor-pointer" />
+              </a>
+              <a href="https://x.com/anukiranghosh" target="_blank" rel="noopener noreferrer">
+
               <Twitter className="mt-5 w-7 h-7 text-purple-500 hover:text-purple-300 transition-colors duration-300 cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com/in/anukiranghosh/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mt-5 w-7 h-7 text-purple-500 hover:text-purple-300 transition-colors duration-300 cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>
