@@ -1,6 +1,6 @@
 import React from 'react';
 import achievement1 from "../assets/achievement1.png";
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Globe, Video } from 'lucide-react';
 
 const Landing = () => {
   return (
@@ -78,6 +78,18 @@ const Landing = () => {
               resources to cope with anxiety & depression. Built with React, Supabase & Gemini API.
             </p>
 
+            <div className="flex items-center justify-center gap-5 mt-4">
+              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+                <Globe className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+                <Github className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+                <Video className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+            </div>
+
           </div>
 
           
@@ -91,6 +103,17 @@ const Landing = () => {
               like mood logging, menstrual calendar/calculator, AI powered menstrual health chatbot & community support 
               with personalized resources.
             </p>
+            <div className="flex items-center justify-center gap-5 mt-4">
+              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+                <Globe className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+                <Github className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+                <Video className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+            </div>
           </div>
 
           
@@ -103,6 +126,17 @@ const Landing = () => {
               AI-powered resume roast generator using React, Express & Google's Gemini API. A user can upload
               their resume & get feedback in the form of a funny roast.
             </p>
+            <div className="flex items-center justify-center gap-5 mt-4">
+              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+                <Globe className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+                <Github className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+                <Video className="w-6 h-6  hover:text-purple-300 transition" />
+              </a>
+            </div>
           </div>
 
         </div>
