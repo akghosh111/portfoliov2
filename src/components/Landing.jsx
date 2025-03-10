@@ -1,5 +1,6 @@
 import React from 'react';
 import achievement1 from "../assets/achievement1.png";
+import TechWheel from './TechWheel';
 import { Github, Linkedin, Twitter, Globe, Video } from 'lucide-react';
 
 const Landing = () => {
@@ -79,13 +80,13 @@ const Landing = () => {
             </p>
 
             <div className="flex items-center justify-center gap-5 mt-auto pt-3">
-              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://cerospace-frontend.pages.dev/" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/akghosh111/cerospace-frontend" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/2gJrcwEfuhI" target="_blank" rel="noopener noreferrer">
                 <Video className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
             </div>
@@ -104,13 +105,13 @@ const Landing = () => {
               with personalized resources.
             </p>
             <div className="flex items-center justify-center gap-5 mt-auto pt-3">
-              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://lunaflow.pages.dev/" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/akghosh111/lunaflow-frontend" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/1Yr_2OWmQEM" target="_blank" rel="noopener noreferrer">
                 <Video className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
             </div>
@@ -128,19 +129,39 @@ const Landing = () => {
               it on their socials.
             </p>
             <div className="flex items-center justify-center gap-5 mt-auto pt-3">
-              <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://cerospace-frontend.pages.dev/" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://github.com/anukiran/cerospace" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/akghosh111/cerospace-frontend" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
-              <a href="https://youtu.be/demo" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/2gJrcwEfuhI" target="_blank" rel="noopener noreferrer">
                 <Video className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
             </div>
           </div>
 
+        
+          
+
         </div>
+        <div className='flex justify-center items-center pt-3'>
+            <p className="text-center">Working on more projects, come back soon</p>
+          </div>
+
+      </section>
+
+      <section id='skills' className='mt-0 p-10 min-h-screen'>
+        <h2 className="md:text-3xl text-2xl text-center mb-6">Skills</h2>
+        
+
+        <TechWheel/>
+        
+      </section>
+
+      <section id='contact' className='mt-0 p-10 min-h-screen'>
+       <h2 className="md:text-3xl text-2xl text-center mb-6">Get in Touch</h2>
+
       </section>
     </div>
   );
