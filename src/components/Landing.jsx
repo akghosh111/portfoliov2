@@ -29,14 +29,14 @@ const Landing = () => {
       </section>
 
       
-      <section id='achievements' className='mt-0 p-10 h-screen'>
+      <section id='achievements' className='mt-0 p-10 min-h-screen'>
         <h2 className="md:text-3xl text-2xl text-center mb-6">Achievements</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           
           
         <div className="achievement-card">
             <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
-            <div className="achievement-overlay"></div>
+            <div className=""></div>
             <p className="achievement-text">
               SIT Ideathon'25 - 1st Runner's Up
             </p>
@@ -47,7 +47,7 @@ const Landing = () => {
             <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
             <div className="achievement-overlay"></div>
             <p className="achievement-text">
-              SIT Ideathon'25 - 1st Runner's Up
+              Technophilia - 1st @SJC, Darjeeling
             </p>
           </div>
 
@@ -56,7 +56,52 @@ const Landing = () => {
             <img src={achievement1} alt="SIT Ideathon Winner" className="achievement-image" />
             <div className="achievement-overlay"></div>
             <p className="achievement-text">
-              SIT Ideathon'25 - 1st Runner's Up
+              VBU - Website Bug Acknowledgement
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id='projects' className='mt-0 p-10 min-h-screen'>
+        <h2 className="md:text-3xl text-2xl text-center mb-6">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-fr">
+          
+          
+        <div className="project-card">
+            
+            <p className="project-title">
+              Cerospace
+            </p>
+            <p className="project-description">A mental health focused website which lets users log their mood,
+              write journals, talk to an AI-powered therapist available 24*7 at their disposal, access to verified
+              resources to cope with anxiety & depression. Built with React, Supabase & Gemini API.
+            </p>
+
+          </div>
+
+          
+          <div className="project-card">
+            
+            
+            <p className="project-title">
+              Lunaflow
+            </p>
+            <p className="project-description">A menstrual health tracking webapp built using React & Supabase with features
+              like mood logging, menstrual calendar/calculator, AI powered menstrual health chatbot & community support 
+              with personalized resources.
+            </p>
+          </div>
+
+          
+          <div className="project-card">
+            <p className="project-title">
+              ShredResume
+            </p>
+            
+            <p className="project-description">
+              AI-powered resume roast generator using React, Express & Google's Gemini API. A user can upload
+              their resume & get feedback in the form of a funny roast.
             </p>
           </div>
 
