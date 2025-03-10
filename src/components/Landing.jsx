@@ -78,7 +78,7 @@ const Landing = () => {
               resources to cope with anxiety & depression. Built with React, Supabase & Gemini API.
             </p>
 
-            <div className="flex items-center justify-center gap-5 mt-4">
+            <div className="flex items-center justify-center gap-5 mt-auto pt-3">
               <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
@@ -103,7 +103,7 @@ const Landing = () => {
               like mood logging, menstrual calendar/calculator, AI powered menstrual health chatbot & community support 
               with personalized resources.
             </p>
-            <div className="flex items-center justify-center gap-5 mt-4">
+            <div className="flex items-center justify-center gap-5 mt-auto pt-3">
               <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
@@ -124,9 +124,10 @@ const Landing = () => {
             
             <p className="project-description">
               AI-powered resume roast generator using React, Express & Google's Gemini API. A user can upload
-              their resume & get feedback in the form of a funny roast.
+              their resume & get feedback in the form of a funny roast. Users can also download the roast & share
+              it on their socials.
             </p>
-            <div className="flex items-center justify-center gap-5 mt-4">
+            <div className="flex items-center justify-center gap-5 mt-auto pt-3">
               <a href="https://cerospace.com" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-6 h-6  hover:text-purple-300 transition" />
               </a>
