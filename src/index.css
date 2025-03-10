@@ -73,12 +73,12 @@
 }
 
 .project-title {
-  @apply  text-center text-white text-2xl font-bold drop-shadow-lg;
+  @apply  text-center text-white text-2xl font-mono drop-shadow-lg;
 }
 
 
 .project-description {
-  @apply   font-semibold drop-shadow-lg pt-2;
+  @apply   font-stretch-semi-condensed drop-shadow-lg pt-2;
 }
 
 }

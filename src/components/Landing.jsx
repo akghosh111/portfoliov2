@@ -14,7 +14,7 @@ const Landing = () => {
             <h1 className="mt-4 text-4xl font-bold italic">
               Anyone can have ideas. I make them impossible to ignore.
             </h1>
-            <h3 className="mt-3 text-lg text-gray-300 px-5">
+            <h3 className="mt-3 text-lg  text-gray-300 px-5">
               I analyze, deconstruct, and build. I don’t chase trends—I create things that define them.
               The goal? Make something so good they have to talk about it.
               <i><b>They get engineered into existence.</b></i>
